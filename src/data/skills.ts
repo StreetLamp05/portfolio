@@ -1,18 +1,59 @@
 export const skills = [
     {
         category: "FRONTEND",
-        items: ["React", "Next.js", "TypeScript", "Tailwind CSS"]
+        items: [
+            "React.js",
+            "Next.js",
+            "TypeScript",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Tailwind CSS",
+            "D3.js"
+        ]
     },
     {
         category: "BACKEND",
-        items: ["Node.js", "Python", "PostgreSQL", "Redis"]
+        items: [
+            "Node.js",
+            "Express.js",
+            "Flask",
+            "FastAPI",
+            "PostgreSQL",
+            "Redis",
+            "REST APIs",
+            "WebSockets",
+            "JWT",
+            "NextAuth"
+        ]
     },
     {
-        category: "DEVOPS",
-        items: ["Docker", "AWS", "CI/CD", "Kubernetes"]
+        category: "DEVOPS / SYSTEMS",
+        items: [
+            "Docker",
+            "AWS",
+            "CI/CD",
+            "GitHub Actions",
+            "Ubuntu Server",
+            "Tailscale",
+            "Cloudflare Tunnels",
+            "Linux",
+            "QEMU"
+        ]
     },
     {
-        category: "TOOLS",
-        items: ["Git", "VS Code", "Figma", "Linux"]
+        category: "AI / DATA",
+        items: [
+            "PyTorch",
+            "TensorFlow",
+            "Scikit-learn",
+            "XGBoost",
+            "Neural Networks",
+            "CNNs",
+            "SNNs",
+            "Signal Processing",
+            "Pandas",
+            "NumPy"
+        ]
     }
 ];
