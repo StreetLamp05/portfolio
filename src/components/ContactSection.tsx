@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 
+// @ts-ignore
 const ContactSection = ({ contact }) => {
     return (
         <section id="contact" className="relative py-32 px-8 border-t border-gray-900">

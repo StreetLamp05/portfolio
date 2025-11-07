@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 
+// @ts-ignore
 const SkillsSection = ({ skills }) => {
     return (
         <section className="relative py-32 px-8 border-t border-gray-900">

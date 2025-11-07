@@ -13,6 +13,11 @@ import AboutSection from "@/components/AboutSection.jsx";
 import ProjectsSection from '@/components/ProjectsSection';
 import SkillsSection from '@/components/SkillsSection'
 import ContactSection from '@/components/ContactSection';
+import Footer from '@/components/Footer';
+import CornerBrackets from '@/components/CornerBrackets';
+import DataTicker from '@/components/DataTicker';
+
+
 
 export default function Home() {
   return (
@@ -20,6 +25,9 @@ export default function Home() {
     {/*bg effects */}
         <ParticleField />
         <HoloGrid />
+        <CornerBrackets/>
+        <DataTicker/>
+
         <HeroSection
         name={personalInfo.name}
         title={personalInfo.title}
@@ -34,6 +42,10 @@ export default function Home() {
         <ProjectsSection projects={projects} />
         <SkillsSection skills={skills} />
         <ContactSection contact={personalInfo.contact} />
+        <Footer
+            copyright={personalInfo.footer.copyright}
+            tagline={personalInfo.footer.tagline}
+        />
     </div>
   );
 }

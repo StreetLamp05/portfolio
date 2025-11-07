@@ -6,7 +6,7 @@ export const projects: Project[] = [
         tech: ['React', 'Next.js', 'Tailwind CSS'],
         link: 'https://github.com/StreetLamp05/weaver',
         // live: 'https://example.com',
-        thumbnail: '/project-thumbnail/weaver-thumb.png', // e.g., /public/projects/project1.jpg
+        thumbnail: '/project-thumbnail/weaver-thumb.png',
     },
     {
         id: 2,
