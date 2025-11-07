@@ -22,7 +22,7 @@ const GlitchText = ({ children, className = ""}) => {
               <span className="absolute top-0 left-0 text-red-500 opacity-70" style={{ transform: 'translate(-2px, -2px)' }}>
                 {children}
               </span>
-                        <span className="absolute top-0 left-0 text-orange-500 opacity-70" style={{ transform: 'translate(2px, 2px)' }}>
+                        <span className="absolute top-0 left-0 text-blue-400 opacity-70" style={{ transform: 'translate(2px, 2px)' }}>
                 {children}
               </span>
             </>

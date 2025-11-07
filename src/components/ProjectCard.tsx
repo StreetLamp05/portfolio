@@ -29,7 +29,7 @@ const ProjectCard = ({ title, description, tech, link, live, thumbnail, delay = 
             onHoverEnd={() => setIsHovered(false)}
             className="group"
         >
-            <div className="relative overflow-hidden rounded-xl bg-black border border-gray-800 transition-all duration-300 hover:border-orange-500">
+            <div className="relative overflow-hidden rounded-xl bg-black border border-gray-800 transition-all duration-300 hover:border-blue-400">
                 {/* Inline layout on md+, stacked on mobile */}
                 <div className="flex flex-col md:flex-row md:items-stretch">
                     {/* Thumbnail (fixed width on md+ to keep rows tidy) */}
@@ -55,7 +55,7 @@ const ProjectCard = ({ title, description, tech, link, live, thumbnail, delay = 
                                 initial={{ scaleY: 0 }}
                                 animate={{ scaleY: isHovered ? 1 : 0 }}
                                 transition={{ duration: 0.25 }}
-                                className="absolute top-0 left-0 h-full w-[3px] bg-orange-500 origin-top"
+                                className="absolute top-0 left-0 h-full w-[3px] bg-blue-400 origin-top"
                             />
                         </div>
                     </div>
@@ -74,7 +74,7 @@ const ProjectCard = ({ title, description, tech, link, live, thumbnail, delay = 
                             {tech.map((t, idx) => (
                                 <span
                                     key={idx}
-                                    className="text-[11px] px-2.5 py-1 bg-gray-900 border border-gray-700 text-orange-400 font-mono"
+                                    className="text-[11px] px-2.5 py-1 bg-gray-900 border border-gray-700 text-blue-300 font-mono"
                                 >
                   {t}
                 </span>
@@ -88,7 +88,7 @@ const ProjectCard = ({ title, description, tech, link, live, thumbnail, delay = 
                                         href={link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-sm text-orange-500 hover:text-orange-400 transition-colors border-b border-orange-500/0 hover:border-orange-500/100"
+                                        className="text-sm text-blue-400 hover:text-pink-400g transition-colors border-b border-blue-400/0 hover:border-blue-400/100"
                                     >
                                         View Code:
                                     </a>
@@ -98,7 +98,7 @@ const ProjectCard = ({ title, description, tech, link, live, thumbnail, delay = 
                                         href={live}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-sm text-orange-500 hover:text-orange-400 transition-colors border-b border-orange-500/0 hover:border-orange-500/100"
+                                        className="text-sm text-blue-400 hover:text-pink-400 transition-colors border-b border-blue-400/0 hover:border-blue-400/100"
                                     >
                                         Live Demo:
                                     </a>
@@ -109,7 +109,7 @@ const ProjectCard = ({ title, description, tech, link, live, thumbnail, delay = 
                 </div>
 
                 {/* Corner accent */}
-                <div className="pointer-events-none absolute top-2 right-2 w-8 h-8 border-r border-t border-orange-500 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="pointer-events-none absolute top-2 right-2 w-8 h-8 border-r border-t border-blue-400 opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
         </motion.div>
     );

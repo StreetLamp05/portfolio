@@ -26,7 +26,7 @@ const DataTicker = () => {
     }, []);
 
     return (
-        <div className="fixed top-4 right-4 text-orange-500 font-mono text-xs space-y-1 z-50 opacity-40">
+        <div className="fixed top-4 right-4 text-blue-400 font-mono text-xs space-y-1 z-50 opacity-40">
             <AnimatePresence>
                 {data.map((msg, idx) => (
                     <motion.div

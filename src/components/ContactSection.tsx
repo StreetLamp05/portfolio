@@ -7,7 +7,7 @@ const ContactSection = ({ contact }) => {
     return (
         <section id="contact" className="relative py-32 px-8 border-t border-gray-900">
             <div className="max-w-4xl mx-auto text-center">
-                <div className="text-xs text-orange-500 font-mono mb-4 tracking-widest">
+                <div className="text-xs text-blue-400 font-mono mb-4 tracking-widest">
                     [COMMUNICATIONS.CHANNEL]
                 </div>
                 <h2 className="text-5xl font-bold mb-12 tracking-tight">CONTACT</h2>
@@ -16,7 +16,7 @@ const ContactSection = ({ contact }) => {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="border border-gray-800 p-12 hover:border-orange-500 transition-colors duration-300"
+                    className="border border-gray-800 p-12 hover:border-blue-400 transition-colors duration-300"
                 >
                     <p className="text-gray-400 text-lg mb-8">
                         {contact.description}
@@ -26,7 +26,7 @@ const ContactSection = ({ contact }) => {
                         {contact.email && (
                             <a
                                 href={`mailto:${contact.email}`}
-                                className="border border-orange-500 px-8 py-3 hover:bg-orange-500 hover:text-black transition-all duration-300 uppercase tracking-wider text-sm"
+                                className="border border-blue-400 px-8 py-3 hover:bg-blue-400 hover:text-black transition-all duration-300 uppercase tracking-wider text-sm"
                             >
                                 Email
                             </a>
@@ -36,7 +36,7 @@ const ContactSection = ({ contact }) => {
                                 href={contact.github}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="border border-gray-700 px-8 py-3 hover:border-orange-500 transition-all duration-300 uppercase tracking-wider text-sm"
+                                className="border border-gray-700 px-8 py-3 hover:border-blue-400 transition-all duration-300 uppercase tracking-wider text-sm"
                             >
                                 GitHub
                             </a>
@@ -46,7 +46,7 @@ const ContactSection = ({ contact }) => {
                                 href={contact.linkedin}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="border border-gray-700 px-8 py-3 hover:border-orange-500 transition-all duration-300 uppercase tracking-wider text-sm"
+                                className="border border-gray-700 px-8 py-3 hover:border-blue-400 transition-all duration-300 uppercase tracking-wider text-sm"
                             >
                                 LinkedIn
                             </a>
@@ -56,7 +56,7 @@ const ContactSection = ({ contact }) => {
                                 href={contact.twitter}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="border border-gray-700 px-8 py-3 hover:border-orange-500 transition-all duration-300 uppercase tracking-wider text-sm"
+                                className="border border-gray-700 px-8 py-3 hover:border-blue-400 transition-all duration-300 uppercase tracking-wider text-sm"
                             >
                                 Twitter
                             </a>

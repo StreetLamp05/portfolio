@@ -9,7 +9,7 @@ import { personalInfo } from '@/data/personalInfo';
 import ParticleField from '@/components/ParticleField';
 import HoloGrid from '@/components/HoloGrid';
 import HeroSection from '@/components/HeroSection';
-import AboutSection from "@/components/AboutSection.jsx";
+import AboutSection from "@/components/AboutSection";
 import ProjectsSection from '@/components/ProjectsSection';
 import SkillsSection from '@/components/SkillsSection'
 import ContactSection from '@/components/ContactSection';
