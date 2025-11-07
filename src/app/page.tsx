@@ -9,6 +9,7 @@ import { personalInfo } from '@/data/personalInfo';
 import ParticleField from '@/components/ParticleField';
 import HoloGrid from '@/components/HoloGrid';
 import HeroSection from '@/components/HeroSection';
+import AboutSection from "@/components/AboutSection.jsx";
 
 export default function Home() {
   return (
@@ -20,6 +21,11 @@ export default function Home() {
         name={personalInfo.name}
         title={personalInfo.title}
         systemVersion={personalInfo.systemVersion}
+        />
+
+        <AboutSection
+            about={personalInfo.about}
+            details={personalInfo.details}
         />
     </div>
   );

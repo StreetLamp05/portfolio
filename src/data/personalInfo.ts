@@ -4,15 +4,15 @@ export const personalInfo = {
   systemVersion: "DAVID.SYSTEM.V2",
   
   about: {
-    paragraph1: "Master's student in Software Engineering with expertise in full-stack development, design patterns, and systems architecture. Passionate about building scalable applications that solve real-world problems.",
+    paragraph1: "Bachelor's in Computer Science with expertise in full-stack development, design patterns, and systems architecture. Passionate about building scalable applications that solve real-world problems.",
     paragraph2: "Experienced in developing civic technology platforms, implementing complex backend systems, and creating intuitive user interfaces with modern frameworks."
   },
-  
+
+
+    // TODO: add more
   details: [
-    { label: "LOCATION", value: "Available Remote" },
-    { label: "STATUS", value: "Open to Opportunities" },
+    { label: "EMAIL", value: "davidkan717@gmail.com"},
     { label: "EDUCATION", value: "B.S. in Computer Science 2026" }
-    // { label: "FOCUS", value: "idk something" }
   ],
   
   contact: {
