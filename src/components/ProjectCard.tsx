@@ -9,6 +9,7 @@ export type Project = {
     title: string;
     description: string;
     tech: string[];
+    devpost?: string;
     link?: string;
     live?: string;
     thumbnail?: string; // /public/... or remote
@@ -16,7 +17,7 @@ export type Project = {
 
 type Props = Project & { delay?: number };
 
-const ProjectCard = ({ title, description, tech, link, live, thumbnail, delay = 0 }: Props) => {
+const ProjectCard = ({ title, description, tech, devpost, link, live, thumbnail, delay = 0 }: Props) => {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
@@ -81,16 +82,26 @@ const ProjectCard = ({ title, description, tech, link, live, thumbnail, delay = 
                             ))}
                         </div>
 
-                        {(link || live) && (
+                        {( devpost || link || live) && (
                             <div className="flex gap-4">
+                                {devpost && (
+                                    <a
+                                        href={devpost}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-sm text-blue-400 hover:text-pink-400 transition-colors border-b border-blue-400/0 hover:border-blue-400/100"
+                                        >
+                                        View Devpost -&gt;
+                                    </a>
+                                )}
                                 {link && (
                                     <a
                                         href={link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-sm text-blue-400 hover:text-pink-400g transition-colors border-b border-blue-400/0 hover:border-blue-400/100"
+                                        className="text-sm text-blue-400 hover:text-pink-400 transition-colors border-b border-blue-400/0 hover:border-blue-400/100"
                                     >
-                                        View Code:
+                                        View Code -&gt;
                                     </a>
                                 )}
                                 {live && (
@@ -100,7 +111,7 @@ const ProjectCard = ({ title, description, tech, link, live, thumbnail, delay = 
                                         rel="noopener noreferrer"
                                         className="text-sm text-blue-400 hover:text-pink-400 transition-colors border-b border-blue-400/0 hover:border-blue-400/100"
                                     >
-                                        Live Demo:
+                                        Live Demo -&gt;
                                     </a>
                                 )}
                             </div>
