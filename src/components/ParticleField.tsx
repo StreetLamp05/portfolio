@@ -50,7 +50,7 @@ const ParticleField = () => {
 
             draw() {
                 if (!ctx) return;
-                ctx.fillStyle = `rgba(255, 80, 40, ${this.opacity})`;
+                ctx.fillStyle = `rgba(106, 90, 205, ${this.opacity})`;
                 ctx.fillRect(this.x, this.y, this.size, this.size);
             } // draw
         } // Particle
@@ -71,7 +71,7 @@ const ParticleField = () => {
             });
 
             // draw connections btwn particles
-            ctx.strokeStyle = `rgba(255, 80, 40, 0.1)`;
+            ctx.strokeStyle = `rgba(106, 90, 205, 0.1)`;
             ctx.lineWidth = 0.5;
 
             for (let i = 0; i < particles.length; i++) {
